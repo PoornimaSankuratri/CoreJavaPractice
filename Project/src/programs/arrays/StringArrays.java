@@ -26,11 +26,10 @@ public class StringArrays {
 	public static HashSet<String> uniqueStringValues(String array[]) {
 		HashSet<String> hs = new HashSet();
 		for (String s : array) {
-			
 			hs.add(s);
 		}
 		ArrayList<String> st = repeatedStrings(array);
-		for(String s: st) {
+		for (String s : st) {
 			hs.remove(s);
 		}
 		return hs;

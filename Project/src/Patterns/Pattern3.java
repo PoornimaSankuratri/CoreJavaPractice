@@ -1,19 +1,21 @@
-package programs.basicproblems;
+package Patterns;
 
 import java.util.Scanner;
 
-public class RightAnglePyramid {
+public class Pattern3 {
 
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter number of lines right angle pyramid you need");
 		int n = sc.nextInt();
-		int i,j;
-		for(i = 1; i <= n; i++)
+		pattern3(n);
+	}
+	public static void pattern3(int n) {
+		for(int i = 1; i <= n; i++)
 		{
-			for(j = n; j >= i; j--)
+			for(int j = n; j >= i; j--)
 			{
-				System.out.print(j);
+				System.out.print("* ");
 			}System.out.println();			
 		}	
 	}
