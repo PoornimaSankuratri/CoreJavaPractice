@@ -3,7 +3,7 @@ package Patterns;
 public class Pattern5 {
 	public static void main(String args[]) {
 		int num;
-		pattern5(4);
+		pattern5(5);
 	}
 public static void pattern5(int num) {
 	int j;
