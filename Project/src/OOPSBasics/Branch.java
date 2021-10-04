@@ -1,4 +1,4 @@
-package OOPS;
+package OOPSBasics;
 
 public class Branch {
 	String branchname;

@@ -1,4 +1,4 @@
-package OOPS;
+package OOPSBasics;
 
 public class Company {
  String Companyname;
