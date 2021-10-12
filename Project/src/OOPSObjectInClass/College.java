@@ -1,6 +1,7 @@
 package OOPSObjectInClass;
 
 public class College {
+
 	String Villagename;
 	int numberofbranches;
 	int numberofblocks;
@@ -8,8 +9,7 @@ public class College {
 	University university;
 
 	public String toString() {
-		return  university + " , VillageName " + Villagename + " , numberofbranches "
-				+ numberofbranches +  " , NumberOfBlocks " + numberofblocks
-				+ " , NumberOfCanteens " + numberofcanteens;
+		return university + " , VillageName " + Villagename + " , numberofbranches " + numberofbranches
+				+ " , NumberOfBlocks " + numberofblocks + " , NumberOfCanteens " + numberofcanteens;
 	}
 }
