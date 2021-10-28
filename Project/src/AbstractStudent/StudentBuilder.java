@@ -26,6 +26,7 @@ package AbstractStudent;
 		}
 
 		public void getAllStudents() {
+			System.out.println("Student are ");
 			for (Student s : students) {
 				System.out.println(s);
 			}

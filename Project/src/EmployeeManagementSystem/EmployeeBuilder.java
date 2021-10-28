@@ -41,7 +41,7 @@ public class EmployeeBuilder {
 	}
 
 	public void getAllEmployees() {
-		System.out.println("Employess are ");
+		System.out.println("Employees are ");
 		for (Employee e : employees) {
 			System.out.println(e);
 		}

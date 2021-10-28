@@ -3,7 +3,7 @@ package AbstractStudent;
 import java.util.ArrayList;
 import java.util.List;
 
- class BranchBuilder extends Branch {
+ class BranchBuilder extends BranchMethods {
 	List<Branch> branches = new ArrayList<>();
 
 	public boolean addBranch(Branch b) {

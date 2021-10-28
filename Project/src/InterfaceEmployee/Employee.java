@@ -4,9 +4,20 @@ package InterfaceEmployee;
 		private int id;
 		private String name;
 		private String gender;
-		private String designation;
 		private int Salary;
 		Designation designations;
+		
+		public Employee() {
+			
+		}
+
+		public Employee(int id, String name, String gender,  int salary, Designation designations) {
+			this.id = id;
+			this.name = name;
+			this.gender = gender;
+			this.Salary = salary;
+			this.designations = designations;
+		}
 
 		public Designation getDesignations() {
 			return designations;
@@ -40,14 +51,6 @@ package InterfaceEmployee;
 			this.gender = gender;
 		}
 
-		public String getDesignation() {
-			return designation;
-		}
-
-		public void setDesignation(String designation) {
-			this.designation = designation;
-		}
-
 		public int getSalary() {
 			return Salary;
 		}
@@ -56,9 +59,10 @@ package InterfaceEmployee;
 			Salary = salary;
 		}
 
+		@Override
 		public String toString() {
-			return "Employee [Employeeid=" + id + ", name=" + name + ", gender=" + gender + ", designation=" + designation
-					+ ", Salary=" + Salary + "]";
+			return "Employee [id=" + id + ", name=" + name + ", gender=" + gender + ", Salary=" + Salary
+					+ ", designations=" + designations + "]";
 		}
 
 	}

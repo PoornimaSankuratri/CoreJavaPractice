@@ -4,9 +4,19 @@ public class Employee {
 	private int id;
 	private String name;
 	private String gender;
-	private String designation;
 	private int Salary;
 	Designation designations;
+
+	public Employee() {
+	}
+
+	public Employee(int id, String name, String gender, int Salary, Designation designations) {
+		this.id = id;
+		this.name = name;
+		this.gender = gender;
+		this.Salary = Salary;
+		this.designations = designations;
+	}
 
 	public Designation getDesignations() {
 		return designations;
@@ -40,14 +50,6 @@ public class Employee {
 		this.gender = gender;
 	}
 
-	public String getDesignation() {
-		return designation;
-	}
-
-	public void setDesignation(String designation) {
-		this.designation = designation;
-	}
-
 	public int getSalary() {
 		return Salary;
 	}
@@ -57,8 +59,7 @@ public class Employee {
 	}
 
 	public String toString() {
-		return "Employee [Employeeid=" + id + ", name=" + name + ", gender=" + gender + ", designation=" + designation
-				+ ", Salary=" + Salary + "]";
+		return "Employee [Employeeid=" + id + ", name=" + name + ", gender=" + gender + ", Salary=" + Salary + "]";
 	}
 
 }

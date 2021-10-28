@@ -3,7 +3,7 @@ package AbstarctEmployee;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DesignationBuilder {
+public class DesignationBuilder extends DesignationMethods {
 	List<Designation> designations = new ArrayList<>();
 
 	public boolean addDesignation(Designation ds) {

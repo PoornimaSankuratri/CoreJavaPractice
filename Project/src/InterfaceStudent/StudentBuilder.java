@@ -26,6 +26,7 @@ class StudentBuilder implements StudentMethods {
 	}
 
 	public void getAllStudents() {
+		System.out.println("Students are ");
 		for (Student s : students) {
 			System.out.println(s);
 		}
