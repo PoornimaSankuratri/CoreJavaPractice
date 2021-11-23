@@ -22,6 +22,13 @@ public static void main(String args[]) {
 	B.Numberoffaculty = 30;
 	B.Numberoflabs = 3;
 	B.Numberofstudents = 300;
+	Branch B1 = new Branch();
+	B1.branchname = "CSE";
+	B1.branchid = 5;
+	B1.Numberofsections = 3;
+	B1.Numberoffaculty = 30;
+	B1.Numberoflabs = 3;
+	B1.Numberofstudents = 300;
 	System.out.println(B);
 	Student S = new Student();
 	S.id = "14A81A0551";
@@ -32,5 +39,12 @@ public static void main(String args[]) {
     S.percentage = 69.6;
     S.grade = 'A';
     System.out.println(S);
+    
+    if(B.equalto(B1)) {
+    	System.out.println("Objects are matching");
+    }
+    else {
+    	System.out.println("Objects are not matching");
+    }
 }
 }

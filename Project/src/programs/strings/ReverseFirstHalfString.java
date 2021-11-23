@@ -21,7 +21,7 @@ public class ReverseFirstHalfString {
 	 * 
 	 * @param s
 	 */
-	public static void reverseFirstHalfString(String s) {
+	public static String reverseFirstHalfString(String s) {
 		int i = s.length();
 		String s1 = "";
 		String s2 = "";
@@ -39,9 +39,10 @@ public class ReverseFirstHalfString {
 		System.out.println(s2);
 		s3 = s1 + s2;
 		System.out.println(s3);
+		return s3;
 	}
 
-	public static void reverseFirstHalfOfString(String str) {
+	public static String reverseFirstHalfOfString1(String str) {
 
 	
 		String temp = "";
@@ -55,6 +56,7 @@ public class ReverseFirstHalfString {
 		}
 		
 		System.out.println(temp);
+		return temp;
 	}
 
 }

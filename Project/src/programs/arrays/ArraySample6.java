@@ -22,7 +22,7 @@ public class ArraySample6 {
 
 	}
 
-	public static void pairElements(int temp[]) {
+	public static int pairElements(int temp[]) {
 		int count = 0;
 		int count2 = 0;
 		for (int i = 0; i < temp.length; i++) {
@@ -39,5 +39,6 @@ public class ArraySample6 {
 			}
 		}
 		System.out.println(count2 + " Pairs are available");
+		return count2;
 	}
 }

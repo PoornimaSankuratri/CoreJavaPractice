@@ -1,8 +1,16 @@
 package OOPSsamplePrograms;
 
+
 public class Branch {
 	private String branchname;
 	private int branchid;
+	
+	public boolean equalto(Branch b) {
+		if (branchname.equals(b.branchname) && branchid == b.branchid ) {
+			return true;
+		}
+		return false;
+	}
 
 	public Branch() {
 	}

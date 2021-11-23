@@ -12,7 +12,7 @@ public class SwapFirstAndLastLetters {
 		s = sc.nextLine();
 		swapFirstAndLastLetters(s);
 	}
-	public static void swapFirstAndLastLetters(String s)
+	public static String swapFirstAndLastLetters(String s)
 	{
 		int i = s.length()-1;
 		char c = s.charAt(i);
@@ -30,6 +30,7 @@ public class SwapFirstAndLastLetters {
 		s2 = c + s1;
 		s3 = s2 + ch1;
 		System.out.println(s3);
+		return s3;
 	}
 	
 }

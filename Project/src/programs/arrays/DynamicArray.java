@@ -9,11 +9,12 @@ public class DynamicArray {
 
 	public static void main(String args[]) {
 		int array[] = new int[5];
-		dynamicArray(array);
+		dynamicArray();
 	}
 
-	public static void dynamicArray(int array[]) {
+	public static int[] dynamicArray() {
 		int n = 0;
+		int array[] = new int[5];
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter array elements");
 		for (int i = 0; i < array.length; i++) {
@@ -26,7 +27,9 @@ public class DynamicArray {
 		}
 		for (int i = 0; i < n; i++) {
 			System.out.println(array[i]);
+
 		}
+		return array;
 
 	}
 }

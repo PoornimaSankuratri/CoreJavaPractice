@@ -1,6 +1,5 @@
 package OOPSsettergetter;
 
-
 public class College {
 	private String Villagename;
 	private Integer numberofbranches;
@@ -59,6 +58,16 @@ public class College {
 
 	public int getNumberofcanteens() {
 		return numberofcanteens;
+	}
+	
+	public boolean equals(College c) {
+		if (
+				Villagename.equals(c.Villagename)
+				&& numberofbranches == c.numberofbranches && university.equals(c.university)
+				&& numberofblocks == c.numberofblocks && numberofcanteens == c.numberofcanteens) {
+			return true;
+		}
+		return false;
 	}
 	public String toString() {
 		return university + " , VillageName " + Villagename + " , numberofbranches " + numberofbranches

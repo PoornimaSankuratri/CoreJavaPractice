@@ -8,9 +8,9 @@ public class Name {
 		String s = "";
 		try {
 			if (s.isEmpty()) {
-				throw new Exception("Username is null");
+				throw new UserDefinedException("Username is null");
 			}
-		} catch (Exception e) {
+		} catch (UserDefinedException e) {
 			System.out.println(e);
 			System.out.println("please enter valid username");
 		}
@@ -21,11 +21,11 @@ public class Name {
 					char ch = s.charAt(i);
 					System.out.println(ch);
 					if ((ch >= 32 && ch <= 64) || (ch >= 91 && ch <= 96) || (ch >= 123 && ch <= 126)) {
-						throw new Exception(ch + " is invalid character");
+						throw new UserDefinedException(ch + " is invalid character");
 					}
 				}
 			}
-		} catch (Exception e) {
+		} catch (UserDefinedException e) {
 			System.out.println(e);
 			System.out.println("please enter valid Name");
 		}

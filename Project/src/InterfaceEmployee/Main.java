@@ -19,6 +19,7 @@ public class Main {
 		db.addDesignation(d6);
 
 		Employee e1 = new Employee(1, "POORNIMA", "FEMALE", 25000, db.getDesignation(1));
+		Employee e = new Employee(1, "POORNIMA", "FEMALE", 25000, db.getDesignation(1));
 		Employee e2 = new Employee(2, "HEMA", "FEMALE", 45000, db.getDesignation(2));
 		Employee e3 = new Employee(3, "SWETHA", "FEMALE", 65000, db.getDesignation(3));
 		Employee e4 = new Employee(4, "ANI", "MALE", 85000, db.getDesignation(4));
@@ -33,10 +34,15 @@ public class Main {
 		eb.addEmployee(e4);
 		eb.addEmployee(e5);
 		eb.addEmployee(e6);
-		
-		eb.getAllEmployees();
-		eb.updateSalary(1,30000);
-		eb.getAllEmployees();
-	}
 
+		eb.getAllEmployees();
+		eb.updateSalary(1, 30000);
+		eb.getAllEmployees();
+
+		if (e1.equals(e)) {
+			System.out.println("Objects are matching");
+		} else {
+			System.out.println("Objects are not matching");
+		}
+	}
 }

@@ -26,12 +26,12 @@ public class Factorial {
  * @param num - it is an integer value
  */
 	
-	public static void factorialOf(int num) {
+	public static int factorialOf(int num) {
 		int fact = 1;
 		for (int i = 1; i <= num; i++) {
 			fact = fact * i;
 		}
 		
-		System.out.println("factorial of given number is " + fact);
+		return fact;
 	}
 }

@@ -1,12 +1,12 @@
 package UserDefinedExceptions;
 
-public class Exception extends RuntimeException{
+public class UserDefinedException extends RuntimeException{
 	String errormsg = "";
 	
-	public Exception() {
+	public UserDefinedException() {
 		errormsg = "invalid String Default meassage";
 	}
-	public Exception(String errormsg) {
+	public UserDefinedException(String errormsg) {
 		this.errormsg = errormsg;
 	}
 	@Override

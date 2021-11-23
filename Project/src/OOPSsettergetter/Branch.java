@@ -1,5 +1,6 @@
 package OOPSsettergetter;
 
+
 public class Branch {
 	private String branchname;
 	private int branchid;
@@ -7,6 +8,14 @@ public class Branch {
 	private int Numberoffaculty;
 	private int Numberoflabs;
 	private int Classstrength;
+	
+	public boolean equals(Branch b) {
+		if (branchname.equals(b.branchname) && branchid == b.branchid && section == b.section 
+				&& Numberoffaculty == b.Numberoffaculty && Numberoflabs == b.Numberoflabs && Classstrength == b.Classstrength) {
+			return true;
+		}
+		return false;
+	}
 
 	public Branch() {
 	}

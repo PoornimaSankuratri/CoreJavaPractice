@@ -13,8 +13,9 @@ public class StringPallindrome {
 
 	}
 
-	public static void stringReverse(String s) {
+	public static boolean stringReverse(String s) {
 		String rev = "";
+		boolean flag = false;
 		for (int i = s.length() - 1; i >= 0; i--) {
 			char c = s.charAt(i);
 			rev = rev+ c;
@@ -25,10 +26,12 @@ public class StringPallindrome {
 		if (s.equals(rev))
 		{
 			System.out.println("Given number is pallindrome ");
+			flag = true;
 		}
 		else
 		{
 			System.out.println("not a pallindrome number ");
 		}
+		return flag;
 	}
 }

@@ -12,6 +12,10 @@ public class ArraySample3 {
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
 		int array[] = new int[size];
+		System.out.println("enter array elements");
+		for (int i = 0; i < array.length; i++) {
+			array[i] = sc.nextInt();
+		}
 		boolean flag = arraySample3(array);
 		if (flag) {
 			System.out.println("Array is super array");
@@ -23,12 +27,7 @@ public class ArraySample3 {
 	public static boolean arraySample3(int array[]) {
 		int j = 0, res;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a number to search");
-		int n = sc.nextInt();
-		System.out.println("enter array elements");
-		for (int i = 0; i < array.length; i++) {
-			array[i] = sc.nextInt();
-		}
+		int n = 3;
 		for (int i = 0; i < array.length; i++) {
 			for (j = i + 1; j < array.length; j++) {
 				res = array[i] + array[j];

@@ -10,12 +10,20 @@ public class Designation {
 	public Designation() {
 	}
 
-	public Designation(int id, String designationname, int minsalary, int maxsalary, boolean permanentemployee) {
+	public Designation(int id, String Designationname, int minsalary, int maxsalary, boolean permanentemployee) {
 		this.id = id;
-		Designationname = designationname;
+		this.Designationname = Designationname;
 		this.minsalary = minsalary;
 		this.maxsalary = maxsalary;
 		this.permanentemployee = permanentemployee;
+	}
+
+	public boolean equals(Designation d) {
+		if (id == d.id && Designationname.equals(d.Designationname) && minsalary == d.minsalary
+				&& maxsalary == d.maxsalary && permanentemployee == permanentemployee) {
+			return true;
+		}
+		return false;
 	}
 
 	public int getId() {

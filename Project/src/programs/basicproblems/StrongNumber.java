@@ -3,7 +3,7 @@ package programs.basicproblems;
 import java.util.Scanner;
 
 /**
- * Sum of factorail of individual digits is equal to actual number
+ * Sum of factorial of individual digits is equal to actual number
  * 
  * @author Poornima
  *

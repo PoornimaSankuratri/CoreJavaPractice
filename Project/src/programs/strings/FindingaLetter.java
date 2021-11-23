@@ -5,12 +5,10 @@ import java.util.Scanner;
 public class FindingaLetter {
 	
 	public static void main(String args[]) {
-		
 	
 		System.out.println("Enter a string");
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
-		
 		System.out.println("Enter a word to search");
 		char c = sc.next().charAt(0);
 		
@@ -19,8 +17,6 @@ public class FindingaLetter {
 		}else{
 			System.out.println(c + " is not present in " + s);
 		}
-
-
 }
 	public static boolean findingaLetter(String s, char c)
 	{

@@ -21,9 +21,10 @@ public class ReverseOfNumber {
 
 	/**
 	 * it will print reverse of given number
+	 * 
 	 * @param num-it is an integer value
 	 */
-	public static void reverseOfNumber(int num) {
+	public static int reverseOfNumber(int num) {
 		int rev = 0, rem;
 		while (num > 0) {
 			rem = num % 10;
@@ -31,6 +32,6 @@ public class ReverseOfNumber {
 			num = num / 10;
 		}
 		System.out.println("reverse of a number" + rev);
+		return rev;
 	}
-
 }

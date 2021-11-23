@@ -11,14 +11,14 @@ public class NumberOfVowelsConsonants {
 		s = sc.nextLine();
         vowelsConsonants(s);
 	}
-	public static void vowelsConsonants(String s)
+	public static int vowelsConsonants(String s)
 	{
 	    int count = 0, count1 = 0;
 		for (int i = s.length() - 1; i >= 0; i--) {
 			char c = s.charAt(i);
 			if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
 			{
-				System.out.println(c);
+				//System.out.println(c);
 				count ++;
 			}
 			else
@@ -28,5 +28,6 @@ public class NumberOfVowelsConsonants {
 		}
 		System.out.println("number of vowels " + count);
 		System.out.println("number of consonants " + count1);
+		return count1;
 	}
 }

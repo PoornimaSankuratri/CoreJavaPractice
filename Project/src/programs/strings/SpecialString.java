@@ -12,9 +12,9 @@ public class SpecialString {
 		specialString(s);
 	}
 
-	public static void specialString(String s) {
+	public static boolean specialString(String s) {
 		boolean flag = false;
-		for(int i = 0; i < s.length() - 1; i++) {
+		for (int i = 0; i < s.length() - 1; i++) {
 			char c = s.charAt(i);
 			char ch = s.charAt(i + 1);
 			if (isvowel(c) && isvowel(ch)) {
@@ -22,16 +22,17 @@ public class SpecialString {
 				break;
 			}
 		}
-		if(flag) {
+		if (flag) {
 			System.out.println("special string");
 		} else {
 			System.out.println("Not a special string");
 		}
+		return flag;
 
 	}
 
 	public static boolean isvowel(char c) {
-		if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O'
+		if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O'
 				|| c == 'U') {
 			return true;
 		} else {

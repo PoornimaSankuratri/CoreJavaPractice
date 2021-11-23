@@ -19,6 +19,7 @@ package InterfaceEmployee;
 			this.designations = designations;
 		}
 
+
 		public Designation getDesignations() {
 			return designations;
 		}
@@ -57,6 +58,13 @@ package InterfaceEmployee;
 
 		public void setSalary(int salary) {
 			Salary = salary;
+		}
+		
+		public boolean equals(Employee e) {
+			if(id == e.id && name.equals(e.name) && name.equals(e.gender) && Salary == e.Salary && designations.equals(e.designations)) {
+				return true;
+			}
+			return false;
 		}
 
 		@Override

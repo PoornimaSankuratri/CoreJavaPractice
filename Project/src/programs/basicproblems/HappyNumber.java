@@ -17,7 +17,7 @@ public class HappyNumber {
 		num = sc.nextInt();
 		happyNumber(num);
 	}
-	public static void happyNumber(int num)
+	public static int happyNumber(int num)
 	{
 		int rem = 1, res = 0;
 		while (num > 9)
@@ -32,6 +32,6 @@ public class HappyNumber {
 		res = 0;
 		}
 		System.out.println(num);
-		
+		return num;
 	}
 }

@@ -12,11 +12,12 @@ public class SunnyNumber {
 		num = sc.nextInt();
 		sunnyNumber(num);
 	}
-	public static void sunnyNumber(int num)
+	public static double sunnyNumber(int num)
 	{
 	    num = num + 1;
 		double sum = Math.sqrt(num);
 		System.out.println(sum);
+		return sum;
 	} 
 	
 

@@ -19,9 +19,9 @@ public class NeonNumber {
 		num = sc.nextInt();
 		boolean flag = neonNumber(num);
 		if (flag) {
-			System.out.println("perfect Number");
+			System.out.println("Neon Number");
 		} else {
-			System.out.println("Not a perfect number");
+			System.out.println("Not a Neon number");
 		}
 	}
 
